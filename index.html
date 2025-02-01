@@ -16,10 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
     <style type="text/tailwindcss">
-        @theme {
+        @theme{
               --font-sora: Sora, serif;
               --font-poppins: Poppins, serif;
-              --font-adlam: ADLaM Display, serif;
+              --font-ADLaM: ADLaM Display, serif;
               --color-vagi: #179800;
               --color-card-bg: #EFEBE3;
             }
@@ -53,12 +53,12 @@
                 </div>
                 <div class="hidden navbar-end gap-6 lg:flex">
                     <div class="space-x-1">
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <a href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                        <a href="#"><span><i class="fa-solid fa-cart-shopping"></i></span></a>
                     </div>
-                    <div>
-                        <a class="btn btn-outline btn-accent">Login</a>
-                        <a class="text-white bg-vagi px-4 py-4 rounded-xl">Register</a>
+                    <div class="space-x-3">
+                        <a href="#"><span class="px-5 py-3 rounded-2xl border border-[#179800] text-xl">Login</span></a>
+                        <a href="#"><span class="bg-vagi px-5 py-3 rounded-2xl text-white text-xl">Register</span></a>
                     </div>
                 </div>
                 <div class="navbar-end lg:hidden">
@@ -70,16 +70,16 @@
     </header>
     <main>
         <!-- banner section -->
-        <section class="my-5">
+        <section class="skeleton my-5">
             <div class="hero min-h-screen">
                 <div class="hero-content text-center">
                     <div class="w-10/12">
                         <h1 class="text-4xl font-semibold">Freshness <span class="text-vagi">You Can</span> <br>
                             <span class="text-vagi">Count</span> On, Prices You’ll Love!
                         </h1>
-                        <p class="py-6 opacity-80">
+                        <p class="py-6 opacity-80 w-2/3 m-auto">
                             Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve
-                            got you covered every day!.
+                            got you covered every day!
                         </p>
                         <img src="image/hero-vegetables.png" alt="hero-vegetables">
                     </div>
@@ -126,20 +126,146 @@
                 </div>
             </div>
         </section>
-        <!-- Popular Products -->
-        <!-- <section class="my-35-auto bg-card-bg">
-            <h1 class="text-vagi text-4xl font-semibold mb-12">Popular Products</h1>
-            <div class="containner">
-                <div>
-                    <h2>30% of</h2>
-                    <p>Discover a world of fresh, organic and seasonal vegetables to keep healthy yourself.</p>
-                    <button class="btn btn-primary">Buy Now</button>
-                    <img src="image/vegetable-offer.png" alt="vegetable-offer">
+        <!-- Popular Products section -->
+        <section class="my-36 py-15 bg-card-bg">
+            <div class="container m-auto">
+                <h1 class="text-vagi text-4xl font-semibold mb-12">Popular Products</h1>
+                <div class="flex-row lg:flex justify-between gap-6">
+                    <div class="bg-lime-300 p-2 rounded-lg lg:grid col-span-4">
+                        <div class="relative p-2">
+                            <h2 class="text-2xl font-bold text-white my-4">30% OFF</h2>
+                            <p class="opacity-70 my-4">Discover a world of treats, toys, and essentials
+                                handpicked for your furry friends</p>
+                            <button class="btn mt-2">Buy Now</button>
+                        </div>
+                        <div class="absolute mt-29 ml-22">
+                            <img src="image/vegetable-offer.png" alt="vegetable-offer">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6 p-2 items-center w-full lg:grid-cols-3 col-span-8">
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Onion.png" alt="Onion" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Onion 1 KG</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Tomato.png" alt="Tomato" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Tomato 500 G</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Cauliflower.png" alt="Cauliflower" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Cauliflower 1 P</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Carrot.jpg" alt="Carrot" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Carrot 1 KG</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Cabbage.jpg" alt="Cabbage" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Cabbage 1 P</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Potato.png" alt="Potato" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Potato 1 KG</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Tomato.png" alt="Tomato" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Tomato 500 G</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Potato.png" alt="Potato" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Potato 1 KG</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex items-center bg-white p-4 gap-4 rounded-lg">
+                            <div>
+                                <img src="image/Onion.png" alt="Onion" class="bg-card-bg rounded-lg">
+                            </div>
+                            <div>
+                                <div class="flex space-x-1">
+                                    <span><i class="text-orange-700 fa-solid fa-star"></i></span>
+                                    <span>4.5</span>
+                                </div>
+                                <h2 class="text-black font-medium">Onion 1 KG</h2>
+                                <p class="font-medium">$39.99</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Limited Products -->
-        <section class="container m-auto mt-36">
+        <section class="container m-auto">
             <h1 class="text-vagi text-4xl font-semibold mb-12">Limited Fruits</h1>
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-4">
                 <div class="card bg-base-100 shadow-xl">
@@ -156,7 +282,7 @@
                             <button class="btn">
                                 <span><i class="fa-regular fa-heart text-red-900"></i></span>
                                 Add To Favorite
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +300,7 @@
                             <button class="btn">
                                 <span><i class="fa-regular fa-heart text-red-900"></i></span>
                                 Add To Favorite
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -192,7 +318,7 @@
                             <button class="btn">
                                 <span><i class="fa-regular fa-heart text-red-900"></i></span>
                                 Add To Favorite
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -210,17 +336,16 @@
                             <button class="btn">
                                 <span><i class="fa-regular fa-heart text-red-900"></i></span>
                                 Add To Favorite
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Arrival & Offers section -->
-        <section class="container m-auto mt-36">
+        <section class="container relative m-auto my-36">
             <h1 class="text-vagi text-4xl font-semibold mb-12">Arrival & Offers</h1>
-            <!-- flex justify-between grid-cols-2 gap-5 -->
-            <div class="grid grid-cols-1 gap-4 lg:flex justify-between gap-5">
+            <div class="grid grid-cols-1 gap-4 lg:flex justify-between">
                 <div class="bg-[#115414] flex items-center justify-center pt-5 gap-11 rounded-md lg:w-7/12">
                     <div class="card_text">
                         <img src="image/dawat-logo.png" alt="dawat-logo" class="mb-8">
@@ -242,9 +367,24 @@
                     </div>
                 </div>
             </div>
+            <!-- extra card -->
+            <div class="absolute container bg-card-bg rounded-3xl text-black p-5 mt-24 ">
+                <div class="flex items-center justify-evenly w-full gap-28">
+                    <div>
+                        <img src="image/vegetable-busket.png" alt="vegetable-busket">
+                    </div>
+                    <div class="space-y-1">
+                        <h2 class="mb-5 text-3xl">Get Grocery News!</h2>
+                        <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                        <p class="rounded-lg"><input type="email" class="p-4 rounded-md bg-white w-full my-9"
+                                name="email" id="" placeholder="Enter email...."></p>
+                        <button class="py-2 px-7 rounded-lg bg-[#179800] text-white">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="footer bg-vagi text-neutral-content p-20 mt-35">
+    <footer class="footer bg-vagi text-neutral-content pb-15 pt-72 mt-72 px-20">
         <aside>
             <img src="image/logo-footer.png" alt="logo-footer">
             <p>
